@@ -1,0 +1,29 @@
+name = "word30210/collection"
+version = "0.1.0"
+description = "a collection class for store any values"
+authors = ["word30210"]
+repository = "https://github.com/Word30210/collection"
+license = "MIT"
+
+[engines]
+pesde = "^0.7.1"
+lune = "^0.10.4"
+
+[target]
+environment = "luau"
+lib = "src/lib.luau"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[dev_dependencies]
+darklua = { name = "pesde/darklua", version = "^0.18.0", target = "lune" }
+multitarget = { name = "ewdev/multitarget", version = "^0.4.2-rc.7", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.7.0-rc.1", target = "lune" }
+frktest = { name = "itsfrank/frktest", version = "^0.0.2", target = "lune" }
+
+[scripts]
+build = "scripts/build.luau"
+
+[dependencies]
+result = { name = "lukadev_0/result", version = "^1.2.1" }
